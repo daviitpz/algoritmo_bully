@@ -52,5 +52,6 @@ def bully_election(num_procesos, initiator_id, porcentaje_procesos_muertos, verb
 
 #for porcentaje_procesos_muertos in [0]: //Evaluación del peor escenario, donde todos los procesos están vivos
 for porcentaje_procesos_muertos in [0, 20, 40, 60]:
-    resultado = bully_election(num_procesos=100, initiator_id=0, porcentaje_procesos_muertos=porcentaje_procesos_muertos,verbose=False)
+    resultado = bully_election(num_procesos=100, initiator_id=0,
+                porcentaje_procesos_muertos=porcentaje_procesos_muertos,verbose=False)
     print(resultado)
